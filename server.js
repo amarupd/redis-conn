@@ -3,7 +3,7 @@ const axios = require("axios");
 const redis = require("redis");
 const app = express();
 
-const redisPort = 6379
+const redisPort = "redis://127.0.0.1:6379"
 const client = redis.createClient(redisPort);
 
 client.on("error", (err) => {
