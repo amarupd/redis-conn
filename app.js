@@ -26,7 +26,7 @@ client
     console.log('err happened' + err);
   });
   
-client.set("name","amar")
+client.set("name","redis")
 console.log("data is set now");
 client.get("name",(err,value)=>{
     if(err){
