@@ -20,7 +20,7 @@ const client=redis.createClient(redisURL)
 client
   .connect()
   .then(async (res) => {
-    console.log('connected');
+    console.log('connected',res);
  })
   .catch((err) => {
     console.log('err happened' + err);
