@@ -35,7 +35,6 @@ app.get("/jobs", (req, res) => {
         res.status(500).send({message: err.message});
     }
 });
-
 app.listen(process.env.PORT || 3000, () => {
     console.log("Node server started");
 });
